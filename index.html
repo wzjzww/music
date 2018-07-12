@@ -9,8 +9,8 @@
     var xhr = new XMLHttpRequest()
       xhr.open('GET','/music/hello.json',true)
       xhr.send()
-      xhr.onload = function(data){
-			console.log(data)
+      xhr.onload = function(){
+			console.log(JSON.parse(xhr.responseText))
 		}
   </script>
 </body>
